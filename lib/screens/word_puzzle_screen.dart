@@ -66,8 +66,20 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
         title: const Text('Футбольный филворд'),
         centerTitle: true,
         actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 16),
+          InkWell(
+            onTap: () {
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Текущие очки в игре'),
+                  behavior: SnackBarBehavior.floating,
+                  duration: Duration(seconds: 1),
+                ),
+              );
+            },
+            borderRadius: BorderRadius.circular(10),
+            child: Container(
+              margin: const EdgeInsets.only(right: 16),
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
             decoration: BoxDecoration(
               color: AppTheme.accentGold.withAlpha(25),
@@ -89,6 +101,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                 ),
               ],
             ),
+          ),
           ),
         ],
       ),
