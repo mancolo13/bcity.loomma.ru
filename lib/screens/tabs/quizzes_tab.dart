@@ -446,7 +446,7 @@ class QuizzesTab extends StatelessWidget {
                       Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Icon(Icons.monetization_on_outlined, size: 13, color: AppTheme.accentGold),
+                          const Icon(Icons.star_rounded, size: 13, color: AppTheme.accentGold),
                           const SizedBox(width: 4),
                           Text(
                             'До ${category.questions.fold<int>(0, (sum, q) => sum + q.points)} очков',

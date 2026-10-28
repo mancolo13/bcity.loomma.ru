@@ -84,8 +84,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           ],
         ),
         actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 14),
+          InkWell(
+            onTap: () => setState(() => _currentIndex = 2),
+            borderRadius: BorderRadius.circular(10),
+            child: Container(
+              margin: const EdgeInsets.only(right: 14),
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: AppTheme.surfaceCard,
@@ -95,7 +98,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Icon(Icons.monetization_on_rounded,
+                const Icon(Icons.star_rounded,
                     color: AppTheme.accentGold, size: 14),
                 const SizedBox(width: 4),
                 Text(
@@ -120,6 +123,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 ),
               ],
             ),
+          ),
           ),
         ],
       ),

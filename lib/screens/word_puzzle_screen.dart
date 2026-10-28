@@ -76,7 +76,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
             ),
             child: Row(
               children: [
-                const Icon(Icons.monetization_on_outlined,
+                const Icon(Icons.star_rounded,
                     size: 14, color: AppTheme.accentGold),
                 const SizedBox(width: 4),
                 Text(

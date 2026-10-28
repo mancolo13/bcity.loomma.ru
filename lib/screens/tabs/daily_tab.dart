@@ -436,7 +436,7 @@ class _DailyTabState extends State<DailyTab> {
                 ),
                 child: Row(
                   children: [
-                    const Icon(Icons.monetization_on_outlined,
+                    const Icon(Icons.star_rounded,
                         size: 13, color: AppTheme.accentGold),
                     const SizedBox(width: 4),
                     Text(

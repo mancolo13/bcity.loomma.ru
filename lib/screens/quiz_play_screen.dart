@@ -57,7 +57,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
             ),
             child: Row(
               children: [
-                const Icon(Icons.monetization_on_outlined,
+                const Icon(Icons.star_rounded,
                     size: 14, color: AppTheme.accentGold),
                 const SizedBox(width: 4),
                 Text(
@@ -410,7 +410,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Icon(Icons.monetization_on_rounded,
+                    const Icon(Icons.star_rounded,
                         color: AppTheme.accentGold, size: 24),
                     const SizedBox(width: 8),
                     Text(

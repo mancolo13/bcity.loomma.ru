@@ -151,7 +151,7 @@ class _RewardsTabState extends State<RewardsTab> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.monetization_on_rounded,
+                        const Icon(Icons.star_rounded,
                             color: AppTheme.accentGold, size: 28),
                         const SizedBox(width: 8),
                         Text(
@@ -310,7 +310,7 @@ class _RewardsTabState extends State<RewardsTab> {
                         Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(Icons.monetization_on_outlined,
+                            const Icon(Icons.star_rounded,
                                 size: 13, color: AppTheme.accentGold),
                             const SizedBox(width: 3),
                             Text(
